@@ -1,0 +1,44 @@
+.contact{
+    background-color: var(--primary-color);
+}
+
+.contact__container{
+    padding: 40px 0;
+}
+
+.contact__info-title{
+    font-size: 30px;
+    color: var(--theme-color-black);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contact__info-desc{
+    margin: 0 auto;
+    color: var(--text-color-inverse);
+    font-size: 18px;
+    text-align: center;
+    padding: 0 15px;
+    max-width: 760px;
+}
+
+.contact__items{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+}
+
+.contact__item{
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.contact__item-img{
+    color: #332A2A;
+}
+
+.contact__item-desc{
+    color: #000;
+    max-width: 760px;
+}

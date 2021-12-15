@@ -1,0 +1,307 @@
+@import url(main.css);
+
+body.disabledScroll{
+    overflow: hidden;
+}
+
+/* ---------- contenedor header ---------- */
+
+.topheader{
+    /* box-shadow: 0 3px 10px #141414; */ /* añade sombra. primer valor = sombra en X. segundo valor = sombra em Y. tercer valor = difuminado. cuarto valor = color */
+    position: fixed; /* fija el header al hacer scroll */
+    z-index: 99999;
+    background-color: var(--theme-color-black); /* color al header */
+    left: 0; /* ajusta el contenedor a la izquierda del contenedor padre*/
+    top: 0; /* ajusta el contenedor arriba del contenedor padre*/
+    width: 100%; /* ajusta el contenedor al 100% del ancho de la pantalla */
+    /* box-shadow: 0 2px 14px 0 #000; */
+}
+
+/* ---------- contenedor nav ---------- */
+
+.topnav{
+    display: flex; /* poner elementos uno al lado del otro */
+    justify-content: space-between; /* Agrega espacio entre elementos */
+    padding: 10px; /* añade espacio entre el contenido y el borde del contenedor */
+    max-width: 1720px; /* tamaño máximo del contenedor */
+    margin: 0 auto; /*centrar el contenedor horizontalmente*/
+}
+
+.space-header{
+    position: relative;
+    display: flex;
+    z-index: 9999;
+}
+
+/* ---------- Logo ---------- */
+
+.logo-container{
+    display: flex;
+}
+
+.logo{
+    display: flex; /* poner elementos uno al lado del otro */
+    align-items: center; /* imagen y texto alineados al centro verticalmente */
+    font-size: 25px; /* tamaño texto */
+    font-weight: 400; /* grosor de texto */
+    color: var(--primary-color); /* Color texto */
+}
+
+.logo img{
+    height: 70px; /* alto de imagen */
+    width: 72px; /* ancho imagen */
+}
+
+.logo p{
+    margin: 0 7px;
+}
+
+/* ---------- Header info ---------- */
+
+.header-info{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+.header-info li{
+    display: flex;
+    padding: 0 15px;
+    align-items: center;
+}
+
+.header-info p{
+    font-size: 16px;
+}
+
+.header-info img{
+    margin: 0 15px;
+}
+
+.header-info__phone{
+    width: 28px;
+    height: 28px;
+}
+
+.header-info__email{
+    width: 35px;
+    height: 22px;
+}
+
+.header-info__location{
+    width: 20px;
+    height: 29px;
+}
+
+
+/* ---------- Menu (PRUEBA) ---------- */
+
+.menu{
+    display: flex;  /*poner elementos uno al lado del otro*/
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    list-style: none; /* quita • a las listas */
+    margin: 0; /* espacio entre borde y elementos externos*/
+    padding: 0; /* espacio entre relleno y bordes*/
+}
+
+.menu li{
+    padding: 0 15px; /* espacio arriba y abajo de 0. espacio de izq y der 15px */
+}
+
+.menu a{
+    color: var(--title-color); /* color de texto */
+    font-size: 20px; /* tamaño de texto */
+    font-weight: 400; /* grosor de texto */
+    line-height: 70px; /* el valor 70 es del alto del logo. centra el texto a la mitad de la altura */
+    text-transform: uppercase; /* transforma el texto a mayúsculas */
+}
+
+/* ---------- Underline  ---------- */
+
+.line{
+    display: block;
+    position: relative;
+}
+
+.line:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    left: 0;
+    bottom: 0;
+    background: #141414;
+}
+
+.line-center::after{
+    transform: scale(0, 1);
+    transition: transform .3s ease;
+}
+
+.line-center:hover::after{
+    transform: scale(1, 1);
+}
+
+/* ---------- Botón  ---------- */
+
+.open-menu,
+.close-menu{
+    border: none; /* quitar estilos del borde */
+    background: none; /* quitar el fondo */
+    margin-left: 25px;
+    cursor: pointer;
+}
+
+
+.close-menu img{
+    width: 45px;
+    margin-top: 6px;
+    margin-right: 2px;
+}
+
+/* ---------- Menu abierto---------- */
+.menu-container{
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    z-index: 999;
+    left: -100%;
+    top: 0;
+    max-width: 400px;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    overflow-y: auto;
+    transition: all .5s ease;
+}
+
+.menu-container.active{
+    left: 0;
+}
+
+.menu li{
+    padding: 0;
+}
+
+.menu a{
+    color: #000; /* color de texto */
+    font-size: 30px; /* tamaño de texto */
+    font-weight: 500; /* grosor de texto */
+    text-transform: uppercase; /* transforma el texto a mayúsculas */
+}
+
+
+.open-menu,
+.close-menu{
+    border: none; /* quitar estilos del borde */
+    background: none; /* quitar el fondo */
+    cursor: pointer;
+}
+
+.close-menu{
+    align-self: flex-end;
+    padding: 15px;
+}
+
+/* ---------- Social ---------- */
+
+.social{
+    display: flex;
+    margin-top: 40px;
+    width: 80px;
+    justify-content: space-between;
+}
+
+.btn-icon{
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+@media (max-width: 1100px){
+    /* ---------- Menu ---------- */
+    .logo{
+        display: flex; /* poner elementos uno al lado del otro */
+        align-items: center; /* imagen y texto alineados al centro verticalmente */
+        font-size: 20px; /* tamaño texto */
+        font-weight: 400; /* grosor de texto */
+        color: var(--primary-color); /* Color texto */
+    }
+
+    .logo img{
+        height: 50px; /* alto de imagen */
+        width: 50px; /* ancho imagen */
+    }
+
+    /* ---------- Header info ---------- */
+    .header-info{
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        align-items: center;
+    }
+    .header-info li{
+        display: flex;
+        padding: 0 10px;
+        align-items: center;
+    }
+
+    .header-info p{
+        font-size: 14px;
+    }
+
+    .header-info img{
+        margin: 0 10px;
+    }
+
+    .header-info__phone{
+        width: 20px;
+        height: 20px;
+    }
+
+    .header-info__email{
+        width: 30px;
+        height: 17px;
+    }
+
+    .header-info__location{
+        width: 18px;
+        height: 22px;
+    }
+
+    /* ---------- Menu ---------- */
+
+    .menu{
+        list-style: none; /* quita • a las listas */
+        margin: 0; /* espacio entre borde y elementos externos*/
+        padding: 0; /* espacio entre relleno y bordes*/
+    }
+
+    .menu li{
+        padding: 0 15px; /* espacio arriba y abajo de 0. espacio de izq y der 15px */
+    }
+
+    .menu a{
+        color: #000; /* color de texto */
+        font-size: 30px; /* tamaño de texto */
+        font-weight: 500; /* grosor de texto */
+        line-height: 70px; /* el valor 70 es del alto del logo. centra el texto a la mitad de la altura */
+        text-transform: uppercase; /* transforma el texto a mayúsculas */
+    }
+
+    .close-menu{
+        padding: 10px 15px;
+    }
+}
+
+@media (max-width: 900px){
+    .header-info{
+        display: none; /* Ocultar */
+    }
+}

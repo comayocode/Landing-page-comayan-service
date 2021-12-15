@@ -1,0 +1,132 @@
+
+
+.carousel__title{
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    margin: 50px 0 35px 0;
+}
+
+.carousel__elementos{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    max-width: 285px;
+    margin: 10px auto;
+}
+
+.carousel__elementos-icono{
+    display: block;
+    margin: 0 auto;
+}
+
+.carousel__element-subtitle{
+    font-size: 20px;
+}
+
+.carousel__element-desc{
+    color: var(--text-color);
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 17px;
+}
+
+.carousel__element-subtitle, .carousel__element-desc{
+    text-align: center;
+}
+
+
+
+
+
+/* Carousel 01 */
+
+.carousel__contenedor{
+    position: relative;
+    /* Si se quiere tener la función para las flechas desactivar el zindex, pero se superpone el texto  */
+    z-index: 99;
+}
+
+.carousel__anterior,
+.carousel__siguiente{
+    position: absolute;
+    z-index: 1;
+    display: block;
+    width: 30px;
+    height: 30px;
+    border: none;
+    top: calc(50% - 35px);
+    line-height: 30px;
+    text-align: center;
+    background: none;
+    color: #fff;
+    opacity: 20%;
+    cursor: pointer;
+}
+
+.carousel__anterior:hover,
+.carousel__siguiente:hover{
+    opacity: 100%;
+}
+
+.carousel__anterior{
+    left: 30px;
+}
+
+.carousel__siguiente{
+    right: 30px;
+}
+
+.carousel__lista{
+    overflow: hidden;
+}
+
+
+
+.carousel__indicadores .glider-dot{
+    display: block;
+    width: 25px;
+    height: 10px;
+    background: #fff;
+    opacity: .2;
+    border-radius: 4;
+    margin-bottom: 30px;
+}
+
+.carousel__indicadores .glider-dot:hover{
+    opacity: .5;
+}
+
+.carousel__indicadores .glider-dot.active{
+    opacity: 1;
+}
+
+@media (min-width: 1280px){
+    .carousel__title{
+        font-size: 45px;
+        margin-top: 70px;
+    }
+
+    .carousel__lista{
+        margin-bottom: 90px;
+    }
+
+    .carousel__element-subtitle{
+        font-size: 25px;
+    }
+
+    .carousel__element-desc{
+        color: var(--text-color);
+        margin-top: 15px;
+        font-size: 18px;
+    }
+
+    .carousel__anterior,
+    .carousel__siguiente{
+        display: none;
+    }
+
+    .carousel__indicadores{
+        display: none;
+    }
+}

@@ -1,0 +1,19 @@
+.footer{
+    position: relative;
+}
+
+.footer__container{
+    background-color: var(--theme-color-white);
+    padding: 10px;
+    height: 60px;
+}
+
+.footer__desc{
+    text-align: center;
+    color: #000;
+    
+}
+
+.fa-heart{
+    color: #ff6347;
+}

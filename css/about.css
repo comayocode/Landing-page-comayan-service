@@ -1,0 +1,176 @@
+.about__container{
+    background-color: var(--theme-color-white);
+    position: relative;
+    padding-bottom: 40px;
+}
+
+.about__img{
+    position: absolute;
+    height: 116px;
+}
+
+.about__info{
+    position: relative;
+    top: 40px;
+    text-align: center;
+}
+
+.about__title{
+    font-size: 30px;
+    color: var(--title-color-inverse);
+}
+
+.about__desc{
+    max-width: 680px;
+    font-size: 18px;
+    margin: 0 auto;
+    padding: 0 15px;
+    color: var(--title-color-inverse);
+}
+
+.about__card{
+    position: relative;
+    top: 40px;
+    background-color: #000;
+    margin: 0 10px 0 10px;
+}
+
+.about__card-title{
+    padding-top: 40px;
+    font-size: 28px;
+    text-align: center;
+}
+
+.about__card-desc{
+    font-size: 18px;
+    margin: 30px 20px 40px 20px;
+    padding-bottom: 40px;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.about__decoration{
+    display: none;
+}
+
+
+@media (min-width: 370px){
+    .about__card-title{
+        text-align: left;
+        padding-left: 45px;
+    }
+
+    .about__card-desc{
+        padding: 0 30px 40px 30px;
+    }
+}
+
+@media (min-width: 550px){
+    .about__card{
+        width: 540px;
+        height: 480px;
+        margin: 51px auto;
+    }
+
+    .about__card-title{
+        margin: 0;
+        position: relative;
+        padding: 54px 0 0 75px;
+        text-align: left;
+    }
+
+    .about__card-desc{
+        margin: 0;
+        padding: 41px 60px 0 75px;
+    }
+}
+
+@media (min-width: 600px){
+
+    .about__card{
+        width: 540px;
+        height: 480px;
+        margin: 51px auto;
+    }
+
+    .about__card-desc{
+        margin: 0;
+        padding: 41px 60px 0 75px;
+    }
+
+    .about__decoration{
+        display: block;
+        position: relative;
+        width: 540px;
+        margin: 0 auto;
+    }
+
+    .div-about__decoration{
+        background-color: var(--primary-color);
+        width: 445px;
+        height: 480px;
+    }
+
+    .div-about__image{
+        position: absolute;
+        top: 50%;
+        left: 10%;
+        transform: translateY(-50%);
+        width: 490px;
+        height: 326px;
+    }
+}
+
+@media (min-width: 750px){
+    .about__img{
+        top: 10px;
+        width: 133px;
+        height: 222px;
+    }
+
+    .about__title{
+        padding-top: 50px;
+        font-size: 35px;
+    }
+}
+
+@media (min-width: 1200px){
+
+    .about__info{
+        max-width: 761px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .about__card{
+        margin: 51px 10px 0 0;
+    }
+
+    .about__title{
+        font-size: 45px;
+        margin-bottom: 0;
+    }
+
+    .about__desc{
+        font-size: 22px;
+        margin-top: 30px;
+        max-width: 761px;
+    }
+
+    /* Falta centrar correctamente "about__card" y "about__decoration en el eje X". Hay un pequeño error de márgenes. */
+
+    .about__cards{
+        display: flex;
+        justify-content: center;
+    }
+
+    .about__decoration{
+        width: 600px;
+        margin: 180px 10px 0 0;
+    }
+
+    .about__container{
+        padding-bottom: 90px;
+    }
+
+}
