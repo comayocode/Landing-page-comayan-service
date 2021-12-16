@@ -11,12 +11,31 @@
     --text-color-inverse: #464646;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     /* display: flex; */
     font-family: 'Poppins', sans-serif;
     background-color: var(--theme-color-black);
     color: var(--title-color);
     padding-top: 70px;
+}
+
+/* --- scroll personalizado --- */
+body::-webkit-scrollbar{
+    width: 12px;
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: rgba(252, 251, 251, .5);
+    border-radius: 5px;
+    border-right: 2px solid var(--theme-color-black);
+}
+
+section[id]{
+    scroll-margin-top: 90px;
 }
 
 a{

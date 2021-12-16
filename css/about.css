@@ -75,7 +75,7 @@
     .about__card-title{
         margin: 0;
         position: relative;
-        padding: 54px 0 0 75px;
+        /* padding: 54px 0 0 75px; */
         text-align: left;
     }
 
@@ -171,6 +171,7 @@
 
     .about__container{
         padding-bottom: 90px;
+        margin-top: 60px;
     }
 
 }

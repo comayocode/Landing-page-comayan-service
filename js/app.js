@@ -1,3 +1,4 @@
+/* --- Abrir y cerrar menú --- */
 const body = document.querySelector("body");
 const menu = document.querySelector(".menu-container");
 const openMenu = document.querySelector(".open-menu");
@@ -13,17 +14,22 @@ closeMenu.onclick = ()=>{
 
 }
 
-//carousel 02
+/* --- Cerrar menú al dar clic a una opción --- */
+const menuLinks = document.querySelectorAll('.menu a[href^="#"]');
 
+menuLinks.forEach(menuLinks =>{
+  menuLinks.addEventListener("click", function(){
+    menu.classList.remove("active");
+    body.classList.remove("disabledScroll");
 
+  })
+})
 
-//carousel 01
-
+/* --- Carousel --- */
 window.addEventListener('load', function(){
     new Glider(document.querySelector('.carousel__lista'),{
         slidesToShow: 1,
         slidesToScroll: 1,
-        draggable: true,
         dots: '.carousel__indicadores',
         arrows: {
             prev: '.carousel__anterior',
@@ -51,6 +57,7 @@ window.addEventListener('load', function(){
     });
 });
 
-/* --- Productos --- */
+
+
 
 

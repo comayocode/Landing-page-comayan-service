@@ -1,7 +1,9 @@
-@import url(main.css);
-
 body.disabledScroll{
     overflow: hidden;
+}
+
+body.enableScroll{
+    overflow: scroll;
 }
 
 /* ---------- contenedor header ---------- */
