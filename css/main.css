@@ -13,10 +13,10 @@
 
 html{
     scroll-behavior: smooth;
+    transition-duration: 5000ms;
 }
 
 body{
-    /* display: flex; */
     font-family: 'Poppins', sans-serif;
     background-color: var(--theme-color-black);
     color: var(--title-color);

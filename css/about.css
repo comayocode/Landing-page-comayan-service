@@ -1,23 +1,30 @@
-.about__container{
+.about{
     background-color: var(--theme-color-white);
     position: relative;
-    padding-bottom: 40px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.about__container{
+    position: relative;
 }
 
 .about__img{
     position: absolute;
+    top: 0px;
     height: 116px;
 }
 
 .about__info{
     position: relative;
-    top: 40px;
     text-align: center;
 }
 
 .about__title{
-    font-size: 30px;
+    margin: 0;
+    font-size: 35px;
     color: var(--title-color-inverse);
+    margin-bottom: 30px;
 }
 
 .about__desc{
@@ -28,14 +35,19 @@
     color: var(--title-color-inverse);
 }
 
+.about__cards{
+    margin-top: 30px;
+}
+
 .about__card{
-    position: relative;
-    top: 40px;
+    position: relative;/* 
+    top: 40px; */
     background-color: #000;
-    margin: 0 10px 0 10px;
+    margin: 0 10px 0px 10px;
 }
 
 .about__card-title{
+    margin: 0;
     padding-top: 40px;
     font-size: 28px;
     text-align: center;
@@ -43,8 +55,8 @@
 
 .about__card-desc{
     font-size: 18px;
-    margin: 30px 20px 40px 20px;
-    padding-bottom: 40px;
+    margin: 30px 20px 0px 20px;
+    padding-bottom: 40PX;
     text-align: justify;
     line-height: 1.5;
 }
@@ -67,21 +79,22 @@
 
 @media (min-width: 550px){
     .about__card{
+        position: relative;
         width: 540px;
         height: 480px;
-        margin: 51px auto;
+        margin: 0px auto;
     }
 
     .about__card-title{
         margin: 0;
         position: relative;
-        /* padding: 54px 0 0 75px; */
         text-align: left;
+        padding-left: 75px;
     }
 
     .about__card-desc{
         margin: 0;
-        padding: 41px 60px 0 75px;
+        padding: 40px 60px 40px 75px;
     }
 }
 
@@ -129,12 +142,16 @@
     }
 
     .about__title{
-        padding-top: 50px;
         font-size: 35px;
     }
 }
 
 @media (min-width: 1200px){
+
+    .about{
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
 
     .about__info{
         max-width: 761px;
@@ -157,8 +174,6 @@
         max-width: 761px;
     }
 
-    /* Falta centrar correctamente "about__card" y "about__decoration en el eje X". Hay un pequeño error de márgenes. */
-
     .about__cards{
         display: flex;
         justify-content: center;
@@ -168,10 +183,4 @@
         width: 600px;
         margin: 180px 10px 0 0;
     }
-
-    .about__container{
-        padding-bottom: 90px;
-        margin-top: 60px;
-    }
-
 }

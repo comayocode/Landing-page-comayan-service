@@ -9,24 +9,22 @@ body.enableScroll{
 /* ---------- contenedor header ---------- */
 
 .topheader{
-    /* box-shadow: 0 3px 10px #141414; */ /* añade sombra. primer valor = sombra en X. segundo valor = sombra em Y. tercer valor = difuminado. cuarto valor = color */
-    position: fixed; /* fija el header al hacer scroll */
+    position: fixed;
     z-index: 99999;
-    background-color: var(--theme-color-black); /* color al header */
-    left: 0; /* ajusta el contenedor a la izquierda del contenedor padre*/
-    top: 0; /* ajusta el contenedor arriba del contenedor padre*/
-    width: 100%; /* ajusta el contenedor al 100% del ancho de la pantalla */
-    /* box-shadow: 0 2px 14px 0 #000; */
+    background-color: var(--theme-color-black);
+    left: 0;
+    top: 0;
+    width: 100%;
 }
 
 /* ---------- contenedor nav ---------- */
 
 .topnav{
-    display: flex; /* poner elementos uno al lado del otro */
-    justify-content: space-between; /* Agrega espacio entre elementos */
-    padding: 10px; /* añade espacio entre el contenido y el borde del contenedor */
-    max-width: 1720px; /* tamaño máximo del contenedor */
-    margin: 0 auto; /*centrar el contenedor horizontalmente*/
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    max-width: 1720px;
+    margin: 0 auto;
 }
 
 .space-header{
@@ -42,16 +40,16 @@ body.enableScroll{
 }
 
 .logo{
-    display: flex; /* poner elementos uno al lado del otro */
-    align-items: center; /* imagen y texto alineados al centro verticalmente */
-    font-size: 25px; /* tamaño texto */
-    font-weight: 400; /* grosor de texto */
-    color: var(--primary-color); /* Color texto */
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 400;
+    color: var(--primary-color);
 }
 
 .logo img{
-    height: 70px; /* alto de imagen */
-    width: 72px; /* ancho imagen */
+    height: 70px;
+    width: 72px;
 }
 
 .logo p{
@@ -101,25 +99,25 @@ body.enableScroll{
 /* ---------- Menu (PRUEBA) ---------- */
 
 .menu{
-    display: flex;  /*poner elementos uno al lado del otro*/
+    display: flex;
     flex-direction: column;
     width: 100%;
     align-items: center;
-    list-style: none; /* quita • a las listas */
-    margin: 0; /* espacio entre borde y elementos externos*/
-    padding: 0; /* espacio entre relleno y bordes*/
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .menu li{
-    padding: 0 15px; /* espacio arriba y abajo de 0. espacio de izq y der 15px */
+    padding: 0 15px;
 }
 
 .menu a{
-    color: var(--title-color); /* color de texto */
-    font-size: 20px; /* tamaño de texto */
-    font-weight: 400; /* grosor de texto */
-    line-height: 70px; /* el valor 70 es del alto del logo. centra el texto a la mitad de la altura */
-    text-transform: uppercase; /* transforma el texto a mayúsculas */
+    color: var(--title-color);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 70px;
+    text-transform: uppercase;
 }
 
 /* ---------- Underline  ---------- */
@@ -152,8 +150,8 @@ body.enableScroll{
 
 .open-menu,
 .close-menu{
-    border: none; /* quitar estilos del borde */
-    background: none; /* quitar el fondo */
+    border: none;
+    background: none;
     margin-left: 25px;
     cursor: pointer;
 }
@@ -191,17 +189,17 @@ body.enableScroll{
 }
 
 .menu a{
-    color: #000; /* color de texto */
-    font-size: 30px; /* tamaño de texto */
-    font-weight: 500; /* grosor de texto */
-    text-transform: uppercase; /* transforma el texto a mayúsculas */
+    color: #000;
+    font-size: 30px;
+    font-weight: 500;
+    text-transform: uppercase;
 }
 
 
 .open-menu,
 .close-menu{
-    border: none; /* quitar estilos del borde */
-    background: none; /* quitar el fondo */
+    border: none;
+    background: none;
     cursor: pointer;
 }
 
@@ -228,16 +226,16 @@ body.enableScroll{
 @media (max-width: 1100px){
     /* ---------- Menu ---------- */
     .logo{
-        display: flex; /* poner elementos uno al lado del otro */
-        align-items: center; /* imagen y texto alineados al centro verticalmente */
-        font-size: 20px; /* tamaño texto */
-        font-weight: 400; /* grosor de texto */
-        color: var(--primary-color); /* Color texto */
+        display: flex;
+        align-items: center;
+        font-size: 20px;
+        font-weight: 400;
+        color: var(--primary-color);
     }
 
     .logo img{
-        height: 50px; /* alto de imagen */
-        width: 50px; /* ancho imagen */
+        height: 50px;
+        width: 50px;
     }
 
     /* ---------- Header info ---------- */
@@ -280,21 +278,21 @@ body.enableScroll{
     /* ---------- Menu ---------- */
 
     .menu{
-        list-style: none; /* quita • a las listas */
-        margin: 0; /* espacio entre borde y elementos externos*/
-        padding: 0; /* espacio entre relleno y bordes*/
+        list-style: none;
+        margin: 0;
+        padding: 0;
     }
 
     .menu li{
-        padding: 0 15px; /* espacio arriba y abajo de 0. espacio de izq y der 15px */
+        padding: 0 15px;
     }
 
     .menu a{
-        color: #000; /* color de texto */
-        font-size: 30px; /* tamaño de texto */
-        font-weight: 500; /* grosor de texto */
-        line-height: 70px; /* el valor 70 es del alto del logo. centra el texto a la mitad de la altura */
-        text-transform: uppercase; /* transforma el texto a mayúsculas */
+        color: #000;
+        font-size: 30px;
+        font-weight: 500;
+        line-height: 70px;
+        text-transform: uppercase;
     }
 
     .close-menu{
@@ -304,6 +302,6 @@ body.enableScroll{
 
 @media (max-width: 900px){
     .header-info{
-        display: none; /* Ocultar */
+        display: none;
     }
 }

@@ -1,10 +1,14 @@
-
+.carousel{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
 
 .carousel__title{
+    margin: 0;
     font-size: 35px;
     display: flex;
     justify-content: center;
-    margin: 50px 0 35px 0;
+    margin-bottom: 30px;
 }
 
 .carousel__elementos{
@@ -34,12 +38,7 @@
 .carousel__element-subtitle, .carousel__element-desc{
     text-align: center;
 }
-
-
-
-
-
-/* Carousel 01 */
+/* --- Carousel ---*/
 
 .carousel__contenedor{
     position: relative;
@@ -81,8 +80,6 @@
     overflow: hidden;
 }
 
-
-
 .carousel__indicadores .glider-dot{
     display: block;
     width: 25px;
@@ -102,13 +99,14 @@
 }
 
 @media (min-width: 1280px){
-    .carousel__title{
-        font-size: 45px;
-        margin-top: 70px;
+    .carousel{
+        padding-top: 70px;
+        padding-bottom: 70px;
     }
 
-    .carousel__lista{
-        margin-bottom: 90px;
+    .carousel__title{
+        font-size: 45px;
+        margin-top: 0px;
     }
 
     .carousel__element-subtitle{

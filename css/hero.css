@@ -3,22 +3,25 @@
     text-align: center;
     margin: 0 auto;
     box-shadow: 2px 4px 15px 0 #000;
-    
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.hero-image{
+    margin-top: 30px;
 }
 
 .hero-imagen__img{
     width: 96%;
     max-width: 650px;
-    margin-bottom: 50px;
 }
 
 /* ---------- Text ---------- */
 
 .hero-title{
     color: #fff;
-    font-size: 32px;
+    font-size: 35px;
     font-weight: bold;
-    padding-top: 38px;
     margin: 0;
 }
 
@@ -34,6 +37,7 @@
     max-width: 420px;
     padding: 30px 5px 0 5px;
     margin: 0 auto;
+    margin-bottom: 40px;
 }
 
 /* ---------- Animated buttom ---------- */
@@ -45,7 +49,6 @@
     font-weight: 500;
     line-height: 1;
     padding: 0.8em 1.2em;
-    margin-top: 30px;
     border-radius: 30px;
     background: none;
     color: var(--primary-color);
@@ -64,8 +67,6 @@
     color: var(--primary-color);
 }
 
-
-
 @media(min-width: 750px){
     .hero-title{
         color: #fff;
@@ -83,7 +84,10 @@
         text-align: left;
         justify-content: space-evenly;
         margin: 0 auto;
-        padding-top: 100px;
+        height: calc(100vh - 70px);
+        align-items: center;
+        padding-top: 0;
+        padding-bottom: 0;
     }
 
     .hero-title{
@@ -104,7 +108,7 @@
     }
 
     .hero-info{
-        padding-top: 40px;
+        margin-bottom: 130px;
     }
 
     .hero-title{

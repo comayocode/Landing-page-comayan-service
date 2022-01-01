@@ -1,15 +1,13 @@
 .contact{
     background-color: var(--primary-color);
-}
-
-.contact__container{
-    padding: 40px 0;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .contact__info-title{
-    font-size: 30px;
+    font-size: 35px;
     color: var(--theme-color-black);
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     text-align: center;
 }
 
@@ -22,10 +20,12 @@
     max-width: 760px;
 }
 
-.contact__items{
-    display: flex;
-    flex-direction: column;
-    padding: 10px 0;
+.map{
+    display: none;
+}
+
+.contact__items-info{
+    display: none;
 }
 
 .contact__item{
@@ -40,5 +40,91 @@
 
 .contact__item-desc{
     color: #000;
-    max-width: 760px;
+}
+
+@media(min-width: 1280px){
+
+    .contact{
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+    .contact__info-title{
+        font-size: 45px;
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+
+    .contact__info-desc{
+        font-size: 22px;
+    }
+
+    .contact__flex{
+        display: flex;
+        position: relative;
+        justify-content: center;
+        margin-top: 40px;
+    }
+
+    .map{
+        display: flex;
+        justify-content: right;
+        margin-right: 30px;
+    }
+
+    .contact__items{
+        display: flex;
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    .contact__items-info{
+        display: block;
+    }
+
+    .contact__items-title{
+        color: var(--theme-color-black);
+        font-size: 20px;
+    }
+
+    .contact__items-desc{
+        color: var(--text-color-inverse);
+        font-size: 17px;
+        max-width: 540px;
+    }
+
+    .contact__item{
+        display: flex;
+        margin: 15px 0;
+        text-align: left;
+    }
+
+    .contact_img-container{
+        width: 50px;
+        height: 40px;
+    }
+
+    .contact__item-img{
+        display: block;
+        margin: 0 auto;
+        line-height: 40px;
+    }
+
+    .contact__item-desc{
+        margin: 0;
+    }
+
+    /* --- Modificadores --- */
+
+    .item-desc-mod{
+        line-height: 40px;
+    }
+
+    .item-img-call{
+        width: 32px;
+        height: 33px;
+    }
+
+    .item-img-location{
+        width: 26px;
+    }
 }

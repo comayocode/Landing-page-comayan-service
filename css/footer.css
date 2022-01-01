@@ -1,17 +1,21 @@
 .footer{
     position: relative;
+    background-color: var(--theme-color-white);
 }
 
 .footer__container{
-    background-color: var(--theme-color-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 10px;
     height: 60px;
 }
 
 .footer__desc{
     text-align: center;
+    margin: 0;
+    text-align: center;
     color: #000;
-    
 }
 
 .fa-heart{
